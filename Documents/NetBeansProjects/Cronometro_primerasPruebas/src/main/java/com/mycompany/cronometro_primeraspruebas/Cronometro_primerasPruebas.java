@@ -32,6 +32,13 @@ public class Cronometro_primerasPruebas {
                     centesimas=centesimas%100; //reiniciar centesimas
                     segundos++; // cuando centesimas alcanza su maximo se reinicia y suma valor 01 a los minutos
                     System.out.println(segundos+"======================================== segundos=====================================");// mostrar por consola 
+                    if(segundos==60){
+                        segundos=segundos%60;
+                        minutos++;
+                        System.out.println(minutos +"========minutos=========================minutos==============================minutos============");
+                    }else{
+                        
+                    }
                 }
                 /**
                 if(segundos==60)
